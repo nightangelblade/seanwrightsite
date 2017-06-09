@@ -3,4 +3,6 @@ language: ruby
 rvm:
   - 2.3.0
 
-script: rspec spec
+script:
+  - bin/rake db:migrate RAILS_ENV=test
+  - bin/rake
