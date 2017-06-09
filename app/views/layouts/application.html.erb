@@ -10,7 +10,7 @@
 
   <body>
   <div class="navigation">
-  	<a href="/">Home</a> | <a href="/welcome/about">About</a>
+  	<%= link_to 'Home', root_path %> | <%= link_to 'About', welcome_about_path %> | <%= link_to 'Projects', projects_show_path %>
 
   </div>
     <%= yield %>
