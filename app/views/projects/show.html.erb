@@ -1,0 +1,13 @@
+<h1>Projects</h1>
+Here are all of the projects I have done of note! There will always be more to come, and I'll do my best to keep this up to date!
+<ul>
+<% @projects.each do |project| %>
+	<li>
+		<h3><%= project.title %></h3>
+		<p>
+			<a href=<%= project.project_link %>>Link</a><br />
+			<%= project.description %>
+		</p>
+	</li>
+<% end %>
+</ul>
