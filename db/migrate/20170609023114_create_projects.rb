@@ -7,7 +7,6 @@ class CreateProjects < ActiveRecord::Migration[5.0]
     	t.string :technology
     	t.string :description
     	t.string :project_link
-      t.timestamps
     end
   end
 end
